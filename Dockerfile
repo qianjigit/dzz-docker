@@ -14,7 +14,7 @@ RUN apk add php php-fpm nginx \
 #安装主程序
 RUN wget -O /tmp/master.zip "https://github.com/qianjigit/dzz2-with-app/archive/master.zip" \
   && unzip /tmp/master.zip -d /tmp \ 
-  && mv /tmp/dzzoffice-master /web \
+  && mv /tmp/dzz2-with-app-master /web \
   && rm -rf /tmp/* \
   && echo "<?php define('DATA_PATH','/data/');" > /web/config/define.php \
   && chmod -R 777 /web /entrypoint.sh
