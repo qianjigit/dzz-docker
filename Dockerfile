@@ -16,6 +16,7 @@ RUN wget -O /tmp/master.zip "https://github.com/qianjigit/dzz2-with-app/archive/
   && unzip /tmp/master.zip -d /tmp \ 
   && mv /tmp/dzzoffice-master /web \
   && rm -rf /tmp/* \
+  && echo "<?php define('DATA_PATH','/data/');" > /web/config/define.php \
   && chmod -R 777 /web /entrypoint.sh
   
 VOLUME /web
