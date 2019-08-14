@@ -5,7 +5,8 @@ COPY entrypoint.sh /entrypoint.sh
 
 #安装PHP NGINX
 RUN apk add php php-fpm \
-    php-session php-iconv php-curl php-mbstring php-gd php-exif php-mysqli php-xml php-zip \  
+    php-session php-iconv php-curl php-mbstring php-gd php-exif php-mysqli php-xml php-zip
+    
     
 #安装主程序
 RUN wget -O /tmp/master.zip "https://github.com/qianjigit/dzz2-with-app/archive/master.zip" \
