@@ -7,5 +7,4 @@ if [ "$dir" == "" ]; then
 fi
 chmod -R 777 /web /data
 
-nginx
 php-fpm7 -F
