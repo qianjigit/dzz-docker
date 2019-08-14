@@ -8,3 +8,5 @@ fi
 chmod -R 777 /web /data
 
 php-fpm7 -F
+
+php -S 0.0.0.0:80 -t /web
